@@ -1,4 +1,6 @@
 ---
+import Analytics from '@vercel/analytics/astro';
+
 interface Props {
   title?: string;
   description?: string;
@@ -18,6 +20,7 @@ const {
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://red-stack.com/" />
   <title>{title}</title>
+  <Analytics />
 
   <!-- Open Graph -->
   <meta property="og:title" content="RedStack — Claude Code, MCP & AI Implementation" />
